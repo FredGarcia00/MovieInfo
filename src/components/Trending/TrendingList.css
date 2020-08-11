@@ -1,0 +1,14 @@
+.Trending-container {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 100px 30px 60px 30px;
+}
+
+
+.image-item img {
+    margin-right: 10px;
+    height: 225px;
+    width: 150px;
+    border-radius: .5rem;
+}

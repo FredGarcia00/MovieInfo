@@ -23,7 +23,7 @@ class Nav extends React.Component {
         return (
             <div style={container}>
                 <div>
-                    <Link style={style} to="/">Movie info</Link>
+                    <Link style={style} to="/">TMDB</Link>
                 </div>
                 <div>
                     <form onSubmit={this.onFormSubmit}>
@@ -37,7 +37,7 @@ class Nav extends React.Component {
                     </form>
                 </div>
                 <div>
-                    <Link to="/" style={{textDecoration: "none"}}> sign up</Link>
+                    <Link to="/" style={signUp}> sign up</Link>
                 </div>
             </div>
         ) 
@@ -50,11 +50,14 @@ const container = {
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '10px',
-    background: 'pink'
+    background: '#364f7a'
 }
 
 const style = {
-    textDecoration: 'none'
+    textDecoration: 'none',
+    color:'#fff',
+    fontSize: '30px',
+    fontWeight: '600'
 }
 
 const input = {
@@ -66,6 +69,11 @@ const input = {
 const btn = {
     padding: '10px',
     border: 'none'
+}
+
+const signUp = {
+    textDecoration: 'none',
+    color:' #fff'
 }
 
 

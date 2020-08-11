@@ -1,0 +1,19 @@
+
+.container {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* width: 100%; */
+    padding: 100px 30px 100px 30px;
+}
+
+.image-container{
+    padding-bottom: 15px;
+}
+
+.poster img {
+    margin-right: 10px;
+    height: 225px;
+    width: 150px;
+    border-radius: .5rem;
+}

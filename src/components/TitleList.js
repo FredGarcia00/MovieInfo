@@ -1,21 +1,14 @@
 import React from 'react';
+import MovieItem from './MovieItem';
 
-
- const TitleList = (props) => {
-     console.log(props.backdrop_path); 
-    const titles = props.title.map((t) => {
-         return (
-             <div key={t.id} className="Container">
-                  {t.title} 
-                  <div>release date:{t.release_date}</div>
-                   <div style={{borderBottom:'1px solid blue'}}>
-                   {t.overview}
-                   </div>
-                  </div>
-         )
-    });
-
-   return <div>{titles}</div>
+const TitleList = ({title}) => {
+    const movieInfo = title.map(res => {
+    
+    return <MovieItem key={res.id} res={res}/>
+  
+});
+return <div className='container'>{movieInfo}</div>
 };
+
 
 export default TitleList;
