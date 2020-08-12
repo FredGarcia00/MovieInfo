@@ -6,7 +6,7 @@ import Popular from './components/Popular/Popular';
 
 // import TitleCard from './components/TitleCard/TitleCard';
 import { Key } from './components/api/Key';
-import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 
 import './App.css';
 import axios from 'axios';
