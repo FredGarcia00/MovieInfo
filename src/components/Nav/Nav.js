@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Route, Redirect } from 'react-router-dom';
 
 class Nav extends React.Component {
 
@@ -27,14 +27,17 @@ class Nav extends React.Component {
                 </div>
                 <div>
                     <form onSubmit={this.onFormSubmit}>
+                        <Link to="/search">
                         <input 
                         value={this.state.term}
                         onChange={this.onInputChange}
                         style={input} type="text" 
                         placeholder="Enter a title"
                         />
-                        <button onSubmit={this.onFormSubmit} style={btn}>icon</button>
+                          </Link>
+                        <button onSubmit={this.onFormSubmit} style={btn}><Link to="/search" style={signUp}> Search</Link></button>
                     </form>
+                        
                 </div>
                 <div>
                     <Link to="/" style={signUp}> sign up</Link>

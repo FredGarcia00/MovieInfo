@@ -18,8 +18,9 @@ const Trending = () => {
     });
      return (
          <div className="Trending-container"> 
-         <div> Trending</div>
+         <div className="Trending-title">Trending</div>
         {trend}
+         
      </div>
      );
     

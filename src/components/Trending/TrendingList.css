@@ -2,7 +2,29 @@
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
-    padding: 100px 30px 60px 30px;
+    padding: 70px 30px;
+    /* background: linear-gradient(lightblue,#fff, lightblue,#fff); */
+}
+
+.Buttons ul{
+    display: flex;
+}
+
+.Trending-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* transform: translate(115px, -40px); */
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+
+
+.image-item {
+    padding-bottom: 12px;
 }
 
 
@@ -11,4 +33,7 @@
     height: 225px;
     width: 150px;
     border-radius: .5rem;
+    -webkit-box-shadow: 5px 5px 9px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 9px -3px rgba(0,0,0,1);
+    box-shadow: 5px 5px 9px -3px rgba(0,0,0,1);
 }

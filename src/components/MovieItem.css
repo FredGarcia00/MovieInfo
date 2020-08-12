@@ -9,6 +9,8 @@
 
 .image-container{
     padding-bottom: 15px;
+    
+
 }
 
 .poster img {
@@ -16,4 +18,5 @@
     height: 225px;
     width: 150px;
     border-radius: .5rem;
+    
 }
